@@ -1,7 +1,7 @@
 var express = require('express');
 var server = express();
 var bodyParser = require('body-parser');
-var port = process.env.port || 1000;
+var port = process.env.PORT || 1000;
 var jsonfile = require('jsonfile');
 var filesave = require('fs');
 var file = './data/data.json';
