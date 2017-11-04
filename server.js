@@ -17,13 +17,7 @@ server.post("/",function(req,res){
 });
 
 server.get("/",function(req,res){
-    jsonfile.readFile(file, function read(err, data) {
-        if (err) {
-            throw err;
-        }
-        var content = data;
-        res.json(content);
-    });    
+    res.send('GET request to the homepage')    
 });
 
 server.listen(port, function(){
