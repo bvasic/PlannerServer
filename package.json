@@ -1,0 +1,24 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Central server for planner app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bvasic/PlannerServer.git"
+  },
+  "author": "Bojan Vasic, Fintan Guihen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bvasic/PlannerServer/issues"
+  },
+  "homepage": "https://github.com/bvasic/PlannerServer#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "fs": "0.0.1-security",
+    "jsonfile": "^4.0.0"
+  }
+}
