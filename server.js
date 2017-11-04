@@ -15,10 +15,16 @@ server.post("/",function(req,res){
         var jsonRequest = req.body;
         jsonfile.writeFile(file,JSON.stringify(jsonRequest.person));
 });
-
 server.get("/",function(req,res){
-    res.send('GET request to the homepage')    
+    jsonfile.readFile(file, function read(err, data) {
+        if (err) {
+            throw err;
+        }
+        var content = data;
+        res.json(content);
+    });    
 });
+
 
 server.listen(port, function(){
     console.log("Server running on port "+port);
