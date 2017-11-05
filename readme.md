@@ -8,3 +8,6 @@ do not restart nginx with /etc/init.d/nginx restart, but kill process manually a
  kill -HUP 9831
 
 /etc/init.d/nginx start
+
+############## PM2 IGNORE WATCH on dev env
+pm2 start server.js --watch --ignore-watch "public/css"
